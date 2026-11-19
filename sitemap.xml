@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.strategicops.example/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.strategicops.example/pages/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/services.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/consulting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/agent-development.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/multi-agent-systems.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/automation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/enterprise-ai.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/integration.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/solutions.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/industries.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/technology.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/process.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/case-studies.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/insights.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/consultation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.strategicops.example/pages/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://www.strategicops.example/pages/terms.html</loc><priority>0.3</priority></url>
+  <url><loc>https://www.strategicops.example/pages/cookies.html</loc><priority>0.3</priority></url>
+</urlset>

@@ -1,0 +1,65 @@
+/* Responsive layer: drawer menu, stacking, touch rules */
+@media (min-width: 1600px) { .container { max-width: 1440px; } }
+
+@media (max-width: 1199.98px) {
+  .nav-link { padding: 10px 10px; font-size: .9rem; }
+  .brand-text i { display: none; }
+  .tabs-side { grid-template-columns: 220px 1fr; gap: 28px; }
+}
+
+/* Tablet and below: full-screen cobalt menu */
+@media (max-width: 991.98px) {
+  .nav-toggle { display: inline-flex; }
+  .nav-pill { padding-right: 6px; }
+  .primary-nav { position: fixed; inset: 0; z-index: -1; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 24px; padding: 110px 24px 40px; background: var(--cobalt); overflow-y: auto; opacity: 0; visibility: hidden; clip-path: circle(0% at calc(100% - 60px) 40px); transition: clip-path .7s var(--ease), opacity .3s, visibility .7s; }
+  .site-header.menu-open .primary-nav { opacity: 1; visibility: visible; clip-path: circle(150% at calc(100% - 60px) 40px); }
+  .site-header.menu-open { z-index: 1100; }
+  .nav-list { flex-direction: column; align-items: stretch; gap: 0; }
+  .nav-blob { display: none; }
+  .nav-item { flex-wrap: wrap; border-bottom: 1px solid rgba(255, 255, 255, .3); }
+  .nav-link { flex: 1; padding: 16px 0; font-family: var(--ff-head); font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.6rem); letter-spacing: -.04em; color: #fff; border-radius: 0; }
+  .nav-link.is-active::after { display: none; } .nav-link.is-active { color: var(--sun); }
+  .dd-toggle { color: #fff; padding: 16px 12px; margin: 0; min-width: 52px; justify-content: center; }
+  .mega { position: static; flex-basis: 100%; min-width: 0; border: 0; box-shadow: none; background: transparent; padding: 0 0 14px; opacity: 1; visibility: visible; transform: none; display: none; }
+  .mega::before { display: none; }
+  .has-dropdown.is-open > .mega { display: block; } .has-dropdown:focus-within > .mega { display: none; } .has-dropdown.is-open:focus-within > .mega { display: block; }
+  .mega-link:hover, .mega-link:focus-visible { background: rgba(255, 255, 255, .14); } .mega-title { color: #fff; } .mega-sub { color: rgba(255, 255, 255, .75); }
+  .nav-cta { align-self: stretch; margin-top: 12px; }
+  .vrow { grid-template-columns: 48px 1fr 36px; row-gap: 8px; } .vrow p { grid-column: 2 / 3; grid-row: 2; } .vr-go { grid-column: 3; grid-row: 1; opacity: 1; }
+  .tabs-side { display: block; } .tabs-side .tab-list { flex-direction: row; margin-bottom: 28px; }
+  .blocks { grid-template-columns: 1fr; } .block:nth-child(5n+1) { grid-column: auto; }
+  .sticky-head { position: static; }
+  .pillar { min-height: 0; }
+  .ph-orb { opacity: .85; right: -6%; top: 20%; }
+}
+
+@media (max-width: 767.98px) {
+  .stack-card { position: relative; top: 0; grid-template-columns: 1fr; box-shadow: none; }
+  .loop-detail { grid-template-columns: 1fr; gap: 12px; }
+  .board { height: auto; }
+  .foot-bottom { flex-direction: column; align-items: flex-start; }
+  .crumbs { top: 84px; } .crumbs ol { padding-inline: 12px; }
+  .page-hero { padding-top: 170px; }
+}
+
+@media (max-width: 575.98px) {
+  .hero { padding: 120px 0 90px; min-height: auto; }
+  .btn-row { flex-direction: column; align-items: stretch; } .btn-row .btn-sy { width: 100%; }
+  .brand-text b { font-size: 1.02rem; } .brand-svg { width: 34px; height: 34px; }
+  .tile, .mini-card, .block { padding: 24px; } .pillar { padding: 28px 22px; }
+  .hero-hint { display: none; } .hero-badge { display: none; }
+  .to-top { right: 14px; } .calendar-fallback { padding: 24px; }
+  .statement-text { max-width: none; }
+  .loop-track { grid-template-columns: repeat(7, 112px); }
+}
+
+@media (max-width: 359.98px) { .display { font-size: 2.3rem; } .btn-sy { padding-inline: 18px; } .brand-text b { font-size: .92rem; } .nav-toggle .nt-label { display: none; } }
+
+/* Touch: no hover-only affordances, no cursor layers */
+@media (hover: none), (pointer: coarse) {
+  .tile::before { display: none; }
+  .statement-text { color: #fff; } .statement-text::after, .foot-word::after { display: none; }
+  .foot-word { -webkit-text-stroke-color: rgba(255, 255, 255, .55); }
+  .vrow::before { display: none; } .vr-go { opacity: 1; }
+  .btn-sy, .viz-btn, .tab, .acc-btn { min-height: 48px; }
+}
